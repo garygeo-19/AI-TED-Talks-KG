@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TED Talks on AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Explore TED Talks on AI</h1>
+        <div class="search-container">
+            <label for="searchInput">Search:</label>
+            <div class="autocomplete">
+                <input id="searchInput" type="text" name="search" placeholder="Search">
+            </div>
+            <div class="sort-options">
+                <label for="sortSelect">Sort:</label>
+                <select id="sortSelect">
+                    <option value="newest">Newest</option>
+                    <option value="oldest">Oldest</option>
+                    <option value="mostViews">Most Views</option>
+                    <option value="mostLikes">Most Likes</option>
+                </select>
+            </div>
+        </div>
+        <div id="initialMessage">Start typing to search for videos...</div>
+        <table id="videoTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Video</th>
+                    <th>Stats</th>
+                    <th>Themes</th>
+                    <th>Topics</th>
+                    <th>People</th>
+                    <th>Organizations</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
